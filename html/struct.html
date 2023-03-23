@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Medical Care</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        #rform {
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 20px;
+        }
+        
+        form {
+          width: 60%;
+          margin: 0 auto;
+          font-size: 16px;
+        }
+        
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        
+        input[type="radio"] {
+          margin-right: 10px;
+        }
+        
+        input[type="submit"] {
+          background-color: #4CAF50;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+        
+        input[type="submit"]:active {
+          background-color: #3e8e41;
+        }
+        
+        input[type="submit"]:focus {
+          outline: none;
+        }
+      </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/scipts.js"></script>
+    <script>
+		function validateForm() {
+			var name = document.forms["patientForm"]["name"].value;
+			var email = document.forms["patientForm"]["email"].value;
+			var phone = document.forms["patientForm"]["phone"].value;
+			var dob = document.forms["patientForm"]["dob"].value;
+			var address = document.forms["patientForm"]["address"].value;
+			var blood_group = document.forms["patientForm"]["blood_group"].value;
+
+			// Check if all required fields are filled
+			if (name == "" || email == "" || phone == "" || dob == "" || address == "" || blood_group == "") {
+				alert("All required fields must be filled out");
+				return false;
+			}
+
+			// Check if phone number contains only numbers
+			if (!/^[0-9]+$/.test(phone)) {
+				alert("Phone number must contain only numbers");
+				return false;
+			}
+
+			// Check if blood group is valid
+			if (!/^A|B|AB|O[+-]$/.test(blood_group)) {
+				alert("Blood group must be a valid type (A, B, AB, or O) followed by a valid Rh factor (+ or -)");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="../photo/logo.jpg" alt="UMC logo"></a>
+                <ul class="nav-links">
+                    <li><a href="#about"><b>About Us</b></a></li>
+                    <li><a href="#services"><b>Services</b></a></li>
+                    <li><a href="#doctors"><b>Doctors</b></a></li>
+                    <li><a href="#contact"><b>Contact Us</b></a></li>
+                    <li><a href="#form"><b>Register Now</b></a></li>
+                    <li><a href="./register.html"><b>Registereration</b></a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            <div class="hero-text">
+                <h1>Unity Medical Care</h1>
+                <p>Providing quality healthcare since 2079</p>
+                <a href="./register.html" class="btn">Register now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p><b>About UMC</b><br>
+                UNITY MEDICAL CARE PVT. LTD. (UMC) was founded with the principles of Social equity in health care. UMC is registered and established on 27th of falgun 2079 and is thriving to provide health services in hygienic way as well as modernization in its system. The Hospital is located presently in a centre of Syangja, best suited for providing prompt health services.</p><br>
+         <div class="stats">
+                <div>
+                    <h3><b>5000+</b></h3>
+                    <p>Patients Served</p><br>
+                </div>
+                <div>
+                    <h3><b>100+</b></h3>
+                    <p>Qualified Doctors</p><br>
+                </div>
+                <div>
+                    <h3><B>20+</B></h3>
+                    <p>Years of Experience</p><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="../photo/cardio.jpg" alt="Service 1">
+                    <h3>Cardiology</h3>
+                    <p>Our hospital's cardio service provides a range of diagnostic and treatment options for heart conditions, including ECG, echocardiography, stress testing, and cardiac catheterization. Our experienced cardiologists work closely with our patients to develop individualized care plans and provide ongoing support for heart health.</p></div>
+                <br><br>
+                <div class="service">
+                    <img src="../photo/dermato.jpg" alt="Service 2">
+                    <h3>Dermatology</h3>
+                    <p>Our hospital's dermatology service offers comprehensive skin care, including diagnosis and treatment of skin conditions such as acne, eczema, and psoriasis. Our skilled dermatologists provide services such as skin cancer screening, mole removal, and cosmetic procedures. We also offer personalized skin care recommendations and education to help our patients maintain healthy skin.</p>                </div><br><br>
+                <div class="service">
+                    <img src="../photo/neuro.jpeg" alt="Service 3">
+                    <h3>Neurology</h3>
+                    <p>Our hospital's neuro service offers advanced diagnostic and treatment options for neurological disorders, such as stroke, epilepsy, and multiple sclerosis. Our team of neurologists and neurosurgeons use state-of-the-art technology to provide personalized care, including brain and spine surgery, electroencephalography, and neuro-rehabilitation. We are committed to improving the quality of life for our patients with neurological conditions.</p>
+                </div><br><br>
+                <div class="service">
+                    <img src="../photo/ortho.jpg" alt="Service 4">
+                    <h3>Orthopedics</h3>
+                    <p>Our hospital's ortho service provides comprehensive care for musculoskeletal conditions, such as joint pain, fractures, and sports injuries. Our skilled orthopedic surgeons use advanced techniques and technology to offer personalized treatment options, including joint replacement surgery, arthroscopy, and physical therapy. We are dedicated to helping our patients regain mobility and improve their quality of life.</p>
+                </div><br>
+            </div>
+        </div>
+    </section><br>
+    
+    <section id="doctors">
+        <div class="container">
+            <h2>Our Doctors</h2>
+            <div class="doctors">
+                <div class="doctor">
+                    <img src="../photo/doc.png" alt="Doctor 1">
+                    <h3>Dr. Niruta Bhattarai</h3>
+                    <p>Cardiologist</p>
+                </div>
+                <div class="doctor">
+                    <img src="../photo/doc.png" alt="Doctor 2">
+                    <h3>Dr. Pranav Adhikari</h3>
+                    <p>Dermatologist</p>
+                </div>
+                <div class="doctor">
+                    <img src="../photo/doc.png" alt="Doctor 3">
+                    <h3>Dr. Ram Shah</h3>
+                    <p>Neurologist</p>
+                </div>
+                <div class="doctor">
+                    <img src="../photo/doc.png" alt="Doctor 4">
+                    <h3>Dr. Sarah Subedi</h3>
+                    <p>Orthopedist</p>
+                </div>
+                <div class="doctor">
+                    
+                    <h3>Other Doctors</h3>
+                    <ul>
+                        <li>Ram prasad</li>
+                        <li>Hari bahadur</li>
+                        <li>......many more</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="container">
+            <h2 id="rform">Patient Registration Form</h2>
+	<form name="patientForm" method="post" action="patientRF.php" onsubmit="return validateForm()">
+		<label for="name">Name:</label>
+		<input type="text" name="name" required><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" name="email" required><br><br>
+		
+		<label for="phone">Phone:</label>
+		<input type="text" name="phone" required><br><br>
+		
+		<label for="dob">Date of Birth:</label>
+		<input type="date" name="dob" required><br><br>
+		
+		<label for="gender">Gender:</label>
+		<input type="radio" name="gender" value="male" checked>Male
+		<input type="radio" name="gender" value="female">Female
+		<input type="radio" name="gender" value="other">Other<br><br>
+		
+		<label for="address">Address:</label>
+		<textarea name="address" rows="1" cols="30" required></textarea><br><br>
+		
+		<label for="blood_group">Blood Group:</label>
+		<input type="text" name="blood_group" required><br><br>
+		
+		<label for="medical_history">Medical History and Problem:</label>
+		<textarea name="medical_history" rows="5" cols="30"></textarea><br><br>
+		
+		<input type="submit" name="submit" value="Submit"><br><br>
+	</form>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Badhkhola Main Street<br>Syangja</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <p>+977 9867072170</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>info@umc.com.np</p>
+                </div>
+            </div>
+
+            <form action="../php/query.php" method="POST">
+                <h2>For any Query </h2>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" name="submit" value="Send">
+              </form>
+              
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <a href="#" class="logo"><img src="../photo/logo.jpg" alt="UMC logo"></a>
+                <p><b>About UMC</b><br>
+                    UNITY MEDICAL CARE PVT. LTD. (UMC) was founded with the principles of Social equity in health care. UMC is registered and established on 27th of falgun 2079 and is thriving to provide health services in hygienic way as well as modernization in its system. The Hospital is located presently in a centre of Syagja, best suited for providing prompt health services.</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>    

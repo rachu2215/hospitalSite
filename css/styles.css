@@ -1,0 +1,244 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo img {
+    height: 200px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner styles */
+#banner {
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#banner button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color:lightseagreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Services styles */
+#services {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.service img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Doctors styles */
+#doctors {
+    padding: 50px 0;
+}
+
+#doctors h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.doctors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doctor {
+    text-align: center;
+    margin: 0 20px 50px;
+}
+
+.doctor img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.doctor h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.doctor p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact styles */
+#contact {
+    background-color:lightseagreen;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.contact-info div {
+    text-align: center;
+    }
+    
+    .contact-info i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    
+    .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    
+    .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    
+    .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    }
+    
+    .contact-form button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    /* Footer styles */
+    footer {
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+   

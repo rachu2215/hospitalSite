@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+   /* Style the header */
+ header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: #f2f2f2;
+  border: 1px solid #333;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style the services section */
+#services {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service {
+  flex-basis: 45%;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.service img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+}
+
+/* Style the doctors section */
+#doctors {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.doctor {
+  flex-basis: 22%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.doctor img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.doctor h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.doctor p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.doctor ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.doctor li {
+  margin-bottom: 5px;
+}
+
+  
+      
